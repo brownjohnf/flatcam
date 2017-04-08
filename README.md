@@ -1,6 +1,17 @@
 FlatCAM: 2D Computer-Aided PCB Manufacturing
 ============================================
 
+This repo was forked from https://bitbucket.org/jpcgt/flatcam. I added support
+for building/running FlatCAM from a Docker container (Linux support only). This
+has only been tested on Arch Linux, `4.10.8-1-ARCH`.
+
+## Running in Docker
+
+1. Clone this repo
+2. Run `make run`. This will build the Docker image, and then run the container,
+   mounting in the necessary sockets for X. It will also allow the root user
+   inside the container to access your user's X session.
+
 (c) 2014-2016 Juan Pablo Caram
 
 FlatCAM is a program for preparing CNC jobs for making PCBs on a CNC router.
